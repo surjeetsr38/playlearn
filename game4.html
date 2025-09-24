@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="game-page">
+    <main class="game-container">
+        <a href="games.html" class="back-btn">← Back to Games</a>
+        <h1>Art Studio: Digital Canvas</h1>
+        <p>Choose a color and start drawing! Click "Clear" to start a new masterpiece.</p>
+        
+        <div class="game-area-full" id="art-studio-game">
+            <div class="canvas-toolbar">
+                <div class="color-picker">
+                    <button class="color-btn active" data-color="#ff6b6b" style="background-color: #ff6b6b;"></button>
+                    <button class="color-btn" data-color="#6a05f0" style="background-color: #6a05f0;"></button>
+                    <button class="color-btn" data-color="#06d6a0" style="background-color: #06d6a0;"></button>
+                    <button class="color-btn" data-color="#ffd166" style="background-color: #ffd166;"></button>
+                </div>
+                <button id="clear-canvas" class="btn-secondary">Clear</button>
+            </div>
+            <canvas id="drawing-canvas" width="600" height="400"></canvas>
+        </div>
+    </main>
+
+    <script src="assets/js/art-studio.js"></script>
+</body>
+</html>

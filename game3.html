@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Explorer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="game-page">
+    <main class="game-container">
+        <a href="games.html" class="back-btn">← Back to Games</a>
+        <h1>Word Explorer: Unscramble It!</h1>
+        <p>Rearrange the letters to find the hidden word.</p>
+        
+        <div class="game-area-full" id="word-explorer-game">
+            <div class="scrambled-word" id="scrambled-word"></div>
+            <input type="text" id="word-answer" placeholder="Type your answer here" required>
+            <button id="submit-word-answer" class="btn-primary">Check Word</button>
+            <div class="feedback" id="word-feedback"></div>
+            <button id="next-word-puzzle" class="btn-secondary" style="display: none;">Next Word</button>
+        </div>
+    </main>
+
+    <script src="assets/js/word-explorer.js"></script> </body>
+</html>

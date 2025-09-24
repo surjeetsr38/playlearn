@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quest</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="game-page">
+    <main class="game-container">
+        <a href="games.html" class="back-btn">← Back to Games</a>
+        <h1>Math Quest: Addition Adventure!</h1>
+        <p>Solve the math problems to earn stars!</p>
+        
+        <div class="game-area-full" id="math-quest-game">
+            <div class="score-board">Score: <span id="math-score">0</span></div>
+            <div class="problem-display">
+                <span id="num1"></span> + <span id="num2"></span> = ?
+            </div>
+            <input type="number" id="math-answer" placeholder="Your Answer" required>
+            <button id="submit-math-answer" class="btn-primary">Submit Answer</button>
+            <div class="feedback" id="math-feedback"></div>
+            <button id="next-math-problem" class="btn-secondary" style="display: none;">Next Problem</button>
+        </div>
+    </main>
+
+    <script src="assets/js/math-quest.js"></script> </body>
+</html>

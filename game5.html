@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Critters</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="game-page">
+    <main class="game-container">
+        <a href="games.html" class="back-btn">← Back to Games</a>
+        <h1>Coding Critters: Block Puzzle</h1>
+        <p>Drag the "move forward" blocks into the program area to guide the critter to the star!</p>
+        
+        <div class="game-area-full" id="coding-critters-game">
+            <div class="code-blocks-container">
+                <div class="code-block" draggable="true" data-action="move-forward">Move Forward</div>
+                <div class="code-block" draggable="true" data-action="move-forward">Move Forward</div>
+                <div class="code-block" draggable="true" data-action="move-forward">Move Forward</div>
+            </div>
+            
+            <div class="program-area" id="program-area">
+                <p>Drag blocks here to build your program...</p>
+            </div>
+
+            <div class="game-board-container">
+                <div class="game-board" id="game-board">
+                    <div class="critter" id="critter" style="top: 0; left: 0;"></div>
+                    <div class="goal" id="goal" style="top: 0; left: 150px;">⭐</div>
+                </div>
+            </div>
+
+            <button id="run-code-btn" class="btn-primary">Run Program</button>
+            <div class="feedback" id="coding-feedback"></div>
+        </div>
+    </main>
+
+    <script src="assets/js/coding-critters.js"></script>
+</body>
+</html>

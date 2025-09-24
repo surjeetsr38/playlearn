@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Lab</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="game-page">
+    <main class="game-container">
+        <a href="games.html" class="back-btn">← Back to Games</a>
+        <h1>Science Lab: Color Mixer</h1>
+        <p>Drag the primary colors into the beaker to see what new colors you can create!</p>
+        
+        <div class="game-area-full" id="science-lab-game">
+            <div class="color-mixer-container">
+                <div class="mixer-beaker" id="mixer-beaker"></div>
+            </div>
+            <div class="color-beakers">
+                <div class="beaker red-beaker" draggable="true" data-color="red" data-value="#ff0000"></div>
+                <div class="beaker blue-beaker" draggable="true" data-color="blue" data-value="#0000ff"></div>
+                <div class="beaker yellow-beaker" draggable="true" data-color="yellow" data-value="#ffff00"></div>
+            </div>
+            <div class="feedback" id="science-feedback"></div>
+        </div>
+    </main>
+
+    <script src="assets/js/science-lab.js"></script>
+</body>
+</html>
